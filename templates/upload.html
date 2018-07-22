@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="images">File input</label>
+            <input type="file" id="images" name="images" accept="image/*" multiple>
+            <p class="help-block">Select Images to Upload.</p>
+            <input type="submit" value="Upload" class="btn btn-success">
+          </div>
+        </form>
+    </div>
+    <div class="row">
+        <form action="{{ url_for('grayfilter',filename=image_name)}}" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <!-- <label for="images">File input</label> -->
+            <!-- <input type="file" id="images" name="images" accept="image/*" multiple> -->
+            <p class="help-block">Black&White</p>
+            <input type="submit" value="Black&White" class="btn btn-success">
+          </div>
+        </form>
+    </div>
+    <div class="row">
+        <form action="{{ url_for('flipfilter',filename=image_name)}}" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <!-- <label for="images">File input</label> -->
+            <!-- <input type="file" id="images" name="images" accept="image/*" multiple> -->
+            <p class="help-block">Flip</p>
+            <input type="submit" value="Flip" class="btn btn-success">
+          </div>
+        </form>
+    </div>
+    <div class="row">
+        <form action="{{ url_for('cropfilter',filename=image_name)}}" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <!-- <label for="images">File input</label> -->
+            <!-- <input type="file" id="images" name="images" accept="image/*" multiple> -->
+            <p class="help-block">Crop</p>
+            <input type="submit" value="Crop" class="btn btn-success">
+          </div>
+        </form>
+    </div>
+    <div class="row">
+        <form action="{{ url_for('galaxyfilter',filename=image_name)}}" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <!-- <label for="images">File input</label> -->
+            <!-- <input type="file" id="images" name="images" accept="image/*" multiple> -->
+            <p class="help-block">Crop</p>
+            <input type="submit" value="Galaxy" class="btn btn-success">
+          </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

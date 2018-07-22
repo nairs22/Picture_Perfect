@@ -1,0 +1,271 @@
+
+{% extends "layout.html" %}
+
+
+					{% block content %}
+					<div id="gallry_pg" class="wrapper group">
+						<style>
+							body{background-image: url(../static/images/backgrounds/022.png);}
+						</style>
+						<script>
+							// Get the modal
+							var modal = document.getElementById('myModal');
+
+							// Get the image and insert it inside the modal - use its "alt" text as a caption
+							var modalImg = document.getElementById("img01");
+							var captionText = document.getElementById("caption");
+							function doWithThisElement(id) {
+									var img = document.getElementById(id);
+											modal.style.display = "block";
+											modalImg.src = img.src;
+											captionText.innerHTML = img.alt;
+							}
+							// Get the <span> element that closes the modal
+							var span = document.getElementsByClassName("close")[0];
+							// When the user clicks on <span> (x), close the modal
+							span.onclick = function() {
+									modal.style.display = "none";
+									modalImg.src = "";
+									captionText.innerHTML = "";
+							}
+						</script>
+						<div id="primary" class="layout-sidebar-no home-section">
+							<div class="inner group">
+								<!-- FILTERS -->
+								<div class="gallery-filters">
+									<ul class="filters gallery-categories">
+										<li class="segment-1 first">
+											<a data-value="all" href="#">All</a>
+										</li>
+										<li class="segment-9">&nbsp;/&nbsp;
+											<a href="#" data-value="brand-identity">Brand Identity</a>
+										</li>
+										<li class="segment-10">&nbsp;/&nbsp;
+											<a href="#" data-value="motion-graphics">Motion Graphics</a>
+										</li>
+										<li class="segment-8">&nbsp;/&nbsp;
+											<a href="#" data-value="web-design">Web Design</a>
+										</li>
+									</ul>
+								</div>
+								<!-- END FILTERS -->
+								<!-- START CONTENT -->
+								<div id="content" class="group">
+									<div id="portfolio-gallery" class="internal_page_items internal_page_gallery">
+										<ul class="gallery-wrap image-grid group">
+											<li data-id="id-1" class="motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="#">
+														<img id="myImg" width="208" height="168" src="../static/images/gallery/14-208x168.jpg" class="picture wp-post-image" alt="14" onclick="doWithThisElement(this.id)" title="14" />
+															<a class="icon-zoom" href="#" title="Photo #10">View More</a>
+													</a>
+												</div>
+											</li>
+											<li data-id="id-2" class="brand-identity motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="#">
+														<img id="myImg1" width="208" height="168" src="../static/images/gallery/13-208x168.jpg" class=" picture wp-post-image" onclick="doWithThisElement(this.id)" alt="13" title="13" />
+													</a>
+												</div>
+											</li>
+											<li data-id="id-3" class="web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="#">
+														<img id="myImg3" width="208" height="168" src="../static/images/gallery/12-208x168.jpg" class="picture wp-post-image" onclick="doWithThisElement(this.id)" alt="12" title="12" />
+													</a>
+												</div>
+											</li>
+											<li data-id="id-4" class="motion-graphics web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="#">
+														<img id="myImg4" width="208" height="168" src="../static/images/gallery/11-208x168.jpg" class="picture wp-post-image" onclick="doWithThisElement(this.id)" alt="11" title="11" />
+													</a>
+												</div>
+											</li>
+											<li data-id="id-5" class="brand-identity ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/10-208x168.jpg" class="picture wp-post-image" alt="10" title="10" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #10</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/10.jpg" rel=" " title="Photo #10">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #10">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-6" class="web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/9-208x168.jpg" class="picture wp-post-image" alt="9" title="9" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #9</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/9.jpg" rel=" " title="Photo #9">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #9">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-7" class="brand-identity motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/8-208x168.jpg" class="picture wp-post-image" alt="8" title="8" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #8</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/8.jpg" rel=" " title="Photo #8">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #8">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-8" class="motion-graphics web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/7-208x168.jpg" class="picture wp-post-image" alt="7" title="7" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #7</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/7.jpg" rel=" " title="Photo #7">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #7">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-9" class="motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/6-208x168.jpg" class="picture wp-post-image" alt="6" title="6" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #6</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/6.jpg" rel=" " title="Photo #6">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #6">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-10" class="motion-graphics web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/5-208x168.jpg" class="picture wp-post-image" alt="5" title="5" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #5</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/5.jpg" rel=" " title="Photo #5">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #5">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-11" class="brand-identity motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/4-208x168.jpg" class="picture wp-post-image" alt="4" title="4" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #4</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/4.jpg" rel=" " title="Photo #4">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #4">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-12" class="brand-identity ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/3-208x168.jpg" class="picture wp-post-image" alt="3" title="3" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #3</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/3.jpg" rel=" " title="Photo #3">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #3">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-13" class="web-design ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/2-208x168.jpg" class="picture wp-post-image" alt="2" title="2" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #2</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/2.jpg" rel=" " title="Photo #2">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #2">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li data-id="id-14" class="motion-graphics ">
+												<div class="internal_page_item internal_page_item_gallery">
+													<a href="photo.html">
+														<img width="208" height="168" src="../static/images/gallery/1-208x168.jpg" class="picture wp-post-image" alt="1" title="1" />
+													</a>
+													<div class="overlay">
+														<h5>
+															<a href="photo.html">Photo #1</a>
+														</h5>
+														<p></p>
+														<div class="controls">
+															<a class="icon-zoom" href="../static/images/gallery/1.jpg" rel=" " title="Photo #1">Zoom</a>
+															<a class="icon-more" href="photo.html" title="Photo #1">View More</a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="clear"></div>
+										<div id="myModal" class="modal">
+										  <span class="close">&times;</span>
+										  <img class="modal-content" id="img01">
+										  <div id="caption"></div>
+										</div>
+									</div>
+								</div>
+								<!-- END CONTENT -->
+							</div>
+						</div>
+						<div class="clear"></div>
+</div>
+					{% endblock %}
+
+					<!-- END WRAPPER -->

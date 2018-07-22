@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main class="container signup-section">
+    <div class="section-content">
+        <h2>Add Image</h2>
+
+        <form method="POST" action="/add/" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.user_image.label }}
+                {{ form.user_image }}
+            </div>
+            {{ form.submit(class="btn-primary") }}
+
+        </form>
+    </div>
+</main>
+{% endblock %}

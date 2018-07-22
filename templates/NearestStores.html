@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+    /*#map iframe {
+        width: 100%;
+    }
+
+    p {
+        color: blue;
+    }*/
+
+    #contact_addrs {
+        text-align: -webkit-center;
+        margin-right: 200px;
+        margin-left: 200px;
+        background-color: rgb(77,106,121);
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    #contact_addrs .stores {
+        list-style-type: none;
+        }
+    .stores p{
+        color:#ffffff;
+    }
+        #contact_addrs .list-unstyled {
+            list-style-type: none;
+        }
+   .list-unstyled li{
+       color:white;
+   }
+</style>
+<!--<div class="map">
+    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kuningan,+Jakarta+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed"></iframe>
+</div>-->
+
+<div id="map" style="margin-left:50px;margin-right:50px;height:500px">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1p5Tiv1PolomN8vmw-82ekFckk69dKMhd" width="100%" height="500"></iframe>
+</div>
+
+<!--<div id="map" style="width:100%;height:500px"></div>-->
+<!--<script>
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+        var mapOptions = { center: myCenter, zoom: 5 };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+            position: myCenter,
+            animation: google.maps.Animation.BOUNCE
+        });
+        marker.setMap(map);
+    }
+</script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeHOBg_Btpz5RE8Era9PVjbm3Ijhex6-4&callback=myMap"></script>-->
+
+<section id="contact-page">
+    <div class="container">
+
+        <div class="center">
+            <h1>Nearest Stores Around!</h1>
+            <p>Have you checked our offline stores yet?? Find out more..</p>
+        </div>
+
+        <ol id="contact_addrs">
+            <li class="stores">
+                <h3>Madison Avenue</h3>
+                <p>660 Madison Avenue</p>
+                <p>New York,<span>NY</span>10065</p>
+                <p class="type">Barneys New York</p>
+                <div class="content">
+                    <div class="row store-hrs-contact">
+                        <div class="info col-sm-4 store-hours">
+                            <h5>Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Mon - Wed: 10 AM - 8 PM</li>
+                                <li>Sat: 10 AM - 8 PM</li>
+                                <li>Sun: 11 AM - 7 PM</li>
+                                <li>Thu - Fri: 10 AM - 9 PM</li>
+                            </ul>
+                        </div>
+
+                        <div class="info col-sm-8 contact">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled">
+                                <li class="store-phone">Phone:<a href="tel:212.826.8900" precog_scanned="true">212.826.8900</a></li>
+                                <li class="store-email">Email:<a href="mailto:perfectpicture905@gmail.com" precog_scanned="true">perfectpicture905@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="stores">
+                <h3>Madison Avenue</h3>
+                <p>660 Madison Avenue</p>
+                <p>New York,<span>NY</span>10065</p>
+                <p class="type">Barneys New York</p>
+                <div class="content">
+                    <div class="row store-hrs-contact">
+                        <div class="info col-sm-4 store-hours">
+                            <h5>Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Mon - Wed: 10 AM - 8 PM</li>
+                                <li>Sat: 10 AM - 8 PM</li>
+                                <li>Sun: 11 AM - 7 PM</li>
+                                <li>Thu - Fri: 10 AM - 9 PM</li>
+                            </ul>
+                        </div>
+
+                        <div class="info col-sm-8 contact">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled">
+                                <li class="store-phone">Phone:<a href="tel:212.826.8900" precog_scanned="true">212.826.8900</a></li>
+                                <li class="store-email">Email:<a href="mailto:perfectpicture905@gmail.com" precog_scanned="true">perfectpicture905@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="stores">
+                <h3>Madison Avenue</h3>
+                <p>660 Madison Avenue</p>
+                <p>New York,<span>NY</span>10065</p>
+                <p class="type">Barneys New York</p>
+                <div class="content">
+                    <div class="row store-hrs-contact">
+                        <div class="info col-sm-4 store-hours">
+                            <h5>Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Mon - Wed: 10 AM - 8 PM</li>
+                                <li>Sat: 10 AM - 8 PM</li>
+                                <li>Sun: 11 AM - 7 PM</li>
+                                <li>Thu - Fri: 10 AM - 9 PM</li>
+                            </ul>
+                        </div>
+
+                        <div class="info col-sm-8 contact">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled">
+                                <li class="store-phone">Phone:<a href="tel:212.826.8900" precog_scanned="true">212.826.8900</a></li>
+                                <li class="store-email">Email:<a href="mailto:perfectpicture905@gmail.com" precog_scanned="true">perfectpicture905@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="stores">
+                <h3>Madison Avenue</h3>
+                <p>660 Madison Avenue</p>
+                <p>New York,<span>NY</span>10065</p>
+                <p class="type">Barneys New York</p>
+                <div class="content">
+                    <div class="row store-hrs-contact">
+                        <div class="info col-sm-4 store-hours">
+                            <h5>Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Mon - Wed: 10 AM - 8 PM</li>
+                                <li>Sat: 10 AM - 8 PM</li>
+                                <li>Sun: 11 AM - 7 PM</li>
+                                <li>Thu - Fri: 10 AM - 9 PM</li>
+                            </ul>
+                        </div>
+
+                        <div class="info col-sm-8 contact">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled">
+                                <li class="store-phone">Phone:<a href="tel:212.826.8900" precog_scanned="true">212.826.8900</a></li>
+                                <li class="store-email">Email:<a href="mailto:perfectpicture905@gmail.com" precog_scanned="true">perfectpicture905@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <!--<div class="row contact-wrap">
+        <div class="status alert alert-success" style="display: none"></div>-->
+        <!--<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" name="name" class="form-control" required="required">
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" name="email" class="form-control" required="required">
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label>Subject *</label>
+                    <input type="text" name="subject" class="form-control" required="required">
+                </div>
+                <div class="form-group">
+                    <label>Message *</label>
+                    <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                </div>
+            </div>
+        </form>-->
+        <!--</div><!--/.row-->-->
+    </div><!--/.container-->
+</section><!--/#contact-page-->
+    {% endblock %}
